@@ -1,0 +1,121 @@
+.sidebar{
+    height: 800px;
+    width: 103px;
+    background-color: var(--sidebar-light-background);
+    border-radius: 0 20px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+}
+.logo-container{
+    height: 100px;
+    background: #7C5DFA;
+    border-bottom-right-radius: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 20px;
+}
+.logo-container img{
+    z-index: 2;
+}
+.violet-box{
+    background: #9277FF;
+    height: 50px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 103px;
+}
+.avatar-switch-group{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+.theme-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid var(--draft-status-color);
+    padding-bottom: 20px;
+  
+}
+.user-avatar{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.user-avatar img{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}
+@media(max-width:767px){
+    .sidebar{
+        height: 103px;
+        width: 800px;
+        background-color: var(--sidebar-light-background);
+        border-radius: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+    }
+    .logo-container{
+        width: 100px;
+        background: #7C5DFA;
+        border-bottom-right-radius: 20px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top-right-radius: 20px;
+    }
+    .logo-container img{
+        z-index: 2;
+    }
+    .violet-box{
+        background: #9277FF;
+        width: 100px;
+        border-bottom-right-radius: 20px;
+        border-top-left-radius: 20px;
+        position: absolute;
+        top: 52px;
+        left: 0px;
+        height: 50px;
+    }
+    .avatar-switch-group{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
+    .theme-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-right: 1px solid var(--draft-status-color);
+        height: 100%;
+        padding-right: 22px;
+        padding-top: 19px;
+        padding-bottom: 20px;
+      
+    }
+    .user-avatar{
+        margin-right: 10px;
+    }
+   
+}
+@media(max-width:412px){
+    .sidebar{
+        height: 103px;
+        width: 400px;
+    }
+}
