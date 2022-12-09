@@ -1,8 +1,12 @@
 header{
         display: flex;
-        margin-top: 30px;
+        margin-top: 50px;
         gap: 2rem;
         color:var(--text-black-color);  
+}
+span.invoices{
+  font-size: .8em;
+  color:var(----text-gray-color);
 }
 .filters{
     border: 1px solid;
@@ -14,7 +18,6 @@ header{
     top: 8px;
   }
 
-}
 .checkbox-container{
     display: flex;
     gap:1rem;
@@ -27,10 +30,13 @@ header{
         color: currentColor;
         width: 1.15em;
         height: 1.15em;
-        border: 0.1em solid var(--invoice-btn-color);
         border-radius: 0.15em;
         transform: translateY(-0.075em);
       
+}
+.checkbox-container input[type='checkbox']:hover{
+  cursor: pointer;
+  border: 0.1em solid var(--invoice-btn-color);
 }
 input[type="checkbox"]::before {
     background: var(--invoice-btn-color);
@@ -56,14 +62,17 @@ input[type="checkbox"]::before {
     position: relative;
     top:-4px
   }
+  .checkbox-container label:hover{
+    cursor: pointer;
+  }
   header button {
+    color: white;
     max-height: 48px;
     min-width: 150px;
     background: var(--invoice-btn-color);
     border-radius: 30px;
     display: flex;
     gap: 1rem;
-    display: flex;
     justify-content: center;
     align-items: center;
   }
@@ -73,9 +82,10 @@ input[type="checkbox"]::before {
     border-radius: 100%;
     height: 35px;
     width: 36px;
-    display: flex;
     color: var(--invoice-btn-color);
+    font-size: 1.5em;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: -11px;
   }
