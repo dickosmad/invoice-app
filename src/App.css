@@ -4,6 +4,7 @@
   --sidebar-light-background: #494E6E;
   --text-black-color: #0C0E16;
   --text-gray-color : #888EB0;
+  --text-white-color:#FFFFFF;
   --invoice-btn-color: #7C5DFA;
   --text-white-color: #FFFFFF;
   --paid-status-color:#33D69F ;
@@ -28,6 +29,9 @@
   display: flex;
   gap:1rem;
  
+}
+.main-content-wrapper{
+  color:var(--text-black-color);
 }
 
 

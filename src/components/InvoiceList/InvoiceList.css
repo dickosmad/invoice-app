@@ -1,0 +1,16 @@
+.invoice-card{
+    display: flex;
+    margin-top: 50px;
+    gap: 1rem;
+    color: var(--text-black-color);
+    width: clamp(500px,730px,1250px);
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    justify-content: space-around;
+    margin-left: 81px;
+
+    }
+    ul >li:not(:last-child){
+        list-style: none;
+    }
