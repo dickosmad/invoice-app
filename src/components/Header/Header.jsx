@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <header>
       <div className="header-description-group">
-        <h3 className="header-title">Invoices</h3>
+        <h2 className="header-title">Invoices</h2>
         <span className="invoices">There are 7 invoices</span>
       </div>
       <div className="header-flex-group">
@@ -47,7 +47,7 @@ export default function Header() {
         </div>
       </div>
       <button className="add-invoices-container">
-        <span className="add-invoice">+</span>
+        <span className="add-invoice"><icon>+</icon> </span>
         New Invoice
       </button>
     </header>
