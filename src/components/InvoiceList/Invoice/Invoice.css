@@ -1,0 +1,106 @@
+.invoice-card{
+    display: flex;
+    margin-top: 50px;
+    gap: 1rem;
+    color: var(--text-black-color);
+    width: clamp(500px,730px,1250px);
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    justify-content: space-around;
+    box-shadow: 11px 10px 15px rgba(0,0,0,.129);
+
+    }
+    ul >li{
+        list-style: none;
+    }
+    .invoice-card:hover{
+        cursor: pointer;
+        border: 1px solid var(--invoice-btn-color);
+    }
+    ul li.invoice-id {
+        font-weight:900;
+    }
+    ul li span{
+        color: var(--invoice-gray-text-color);
+
+    }
+    ul li.invoice-date ,li.invoice-owner{
+        color: var(--invoice-gray-text-color);
+    }
+    ul li.invoice-price{
+        font-weight:900;
+        font-size: 1.2em;
+    }
+    ul li.invoice-status .status{
+        color:var(--pending-status-color);
+        font-weight:600;
+        padding: 7px 15px;
+        background: #D7A15D40;
+        border-radius: 4px;
+        
+    }
+    ul li.pending-status {
+        color: var(--pending-status-color);
+        background: #D7A15D40;
+        padding: 5px;
+    }
+    ul li.invoice-status .dot{
+        background-color: var(--pending-status-color);
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    ul li.invoice-status .right-arrow{
+        margin-left: 15px;
+    }
+
+    @media (max-width:900px){
+        .invoice-card{
+            width: clamp(400px, 600px, 900px) ;
+        
+            }
+            header {
+                gap: 4rem;
+                width: clamp(400px, 600px, 900px) ;
+                
+              }
+      }
+
+@media(max-width:412px){
+    .invoice-card{
+        display: grid;
+        grid-template-areas:
+            "id owner"
+            "date status"
+            "price status";
+        gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 30px);
+        width: clamp(350px, 360px, 400px);
+        column-gap: 57px;
+    }
+    .invoice-date{
+        grid-area: date;
+    }
+    .invoice-owner{
+        grid-area: owner;
+    }
+    .invoice-price{
+        grid-area: price;
+    }
+    .invoice-status{
+        grid-area: status;
+        grid-row:2/3;
+        margin-top: 7px;
+    }
+    .status{
+        display: inline-block;
+        height: 50px;
+    }
+    .right-arrow{
+        display:none;
+    }
+}

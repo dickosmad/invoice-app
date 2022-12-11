@@ -1,27 +1,39 @@
 header{
   display: flex;
-  margin-top: 50px;
   gap: 8rem;
   color: var(--text-black-color);
-  justify-content: center;
-  width: clamp(700px,900px,1250px);
+  justify-content: space-between;
+  width: clamp(500px,700px,1250px);
+  position: relative;
 }
-span.invoices{
+.filters-container button{
+    border :none;
+    outline: none;
+    background: none;
+    color: var(--text-black-color);
+    font-weight: 600;
+}
+.filters-container .arrow-down{
+  padding-left: 10px;
+}
+p.invoices{
+  display: inline-block;
   font-size: 0.8em;
-color: var(----text-gray-color);
-font-weight: 300;
+  color: var(--text-gray-color);
+  font-weight: 500;
 }
 .filters{
-  border: 1px solid wheat;
+  background: var(--text-white-color);
+  border: 1px solid var(--text-white-color);
   margin: 10px 0px;
   padding: 20px 25px;
   width: 192px;
-  height: 128px;
-  position: relative;
-  top: 8px;
+  height: 128px;;
   box-shadow: 11px 10px 15px rgba(0,0,0,.129);
   border-radius: 10px;
-
+  position: absolute;
+  top: 29px;
+  z-index: 3;
   }
 
 .checkbox-container{
@@ -71,14 +83,14 @@ input[type="checkbox"]::before {
   .checkbox-container label:hover{
     cursor: pointer;
   }
-  header button {
+  header button.add-invoices-btn {
     color: white;
     max-height: 48px;
     min-width: 150px;
     background: var(--invoice-btn-color);
     border-radius: 30px;
     display: flex;
-    gap: 1rem;
+    gap: 10px;
     justify-content: center;
     align-items: center;
   }
@@ -99,3 +111,29 @@ input[type="checkbox"]::before {
     position: relative;
     top: -4px;
   }
+
+  @media (max-width:850px){
+    .invoice-card{
+        width: clamp(400px, 600px, 900px) ;
+    
+        }
+  }
+  @media (max-width:412px){
+    header {
+      gap: 2rem;
+      width: clamp(300px, 375px, 400px) !important;
+      justify-content:space-around;
+    }
+    header button.add-invoices-btn{
+      max-height: 48px;
+      min-width: 99px;
+    }
+    .filters{
+      left:99px;
+      width: 175px;
+    }
+    .hidden-at-mobile{
+      display: none;
+    }
+  }
+ 

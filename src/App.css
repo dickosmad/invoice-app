@@ -5,8 +5,8 @@
   --text-black-color: #0C0E16;
   --text-gray-color : #888EB0;
   --text-white-color:#FFFFFF;
+  --invoice-gray-text-color: #858BB2;
   --invoice-btn-color: #7C5DFA;
-  --text-white-color: #FFFFFF;
   --paid-status-color:#33D69F ;
   --pending-status-color:  #FF8F00;
   --draft-status-color: #373B53;
@@ -31,7 +31,38 @@
  
 }
 .main-content-wrapper{
-  color:var(--text-black-color);
+  color: var(--text-black-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px auto;
 }
 
-
+@media (max-width: 1150px){
+  .main-content-wrapper{   
+    margin-left: clamp(15px, 50px, 100px);
+    margin-top: 50px;
+  }
+}
+@media (max-width:900px){
+  .app-container{
+    width: clamp(600px, 800px, 900px) ;
+    display: flex;
+    gap:1rem;
+   
+  }
+}
+@media (max-width:768px){
+  .app-container{
+    display: flex;
+    flex-direction: column;
+   
+  }
+}
+@media (max-width: 412px){
+  .main-content-wrapper{   
+    margin-left: clamp(10px, 11px, 50px);
+    margin-top: 50px;
+    width: clamp(300px, 350px, 357px) ;
+  }
+}
