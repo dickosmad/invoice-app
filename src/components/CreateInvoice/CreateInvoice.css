@@ -1,0 +1,128 @@
+.create-invoice-wrapper {
+    width: max(857px,600px);
+    background: var(--text-white-color);
+    padding: 40px 40px 30px 220px;
+    border-radius: 0px 20px 20px 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 3;
+    overflow: scroll;
+}
+.create-invoice-wrapper form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.create-invoice-title{
+    font-size: 1.7em;
+}
+.create-invoice-wrapper .bill-adress{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.create-invoice-wrapper h5{
+    color: var(--invoice-btn-color);
+}
+.create-invoice-wrapper .input-group{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.create-invoice-wrapper .input-group label{
+    color: var(--input-label-gray-color);
+    font-weight: 400;
+    font-size: .7em;
+    margin:5px 0px;
+}
+.create-invoice-wrapper .input-group input{
+    /* width: max(50%,504px); */
+    height: max(20px,45px);
+}
+.create-invoice-wrapper .input-group input{
+    background: none ;
+    border: 1px solid var(--input-border-gray-color);
+}
+form .bill-zip-country-city-group{
+    display: flex;
+    justify-content: space-between;
+}
+form .client-zip-country-city-group{
+    display: flex;
+    justify-content: space-between;
+}
+.invoice-date-group{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.invoice-date-group .input-group{
+    width: 50%;
+}
+.invoice-date-group .input-group select{
+    height: 45px;
+    background: none;
+    color: var(--text-black-color);
+    padding-left: 20px;    
+    font-weight: bold;
+    appearance: none;
+    border: 1px solid var(--input-border-gray-color);
+}
+.invoice-date-group input[type="date"]{
+    color: var(--text-black-color);
+}
+.invoice-date-group input[type="date"]:-webkit-datetime-edit { padding: 1em; }
+.invoice-date-group input[type="date"]::-webkit-datetime-edit-fields-wrapper { background: silver; }
+.invoice-date-group input[type="date"]::-webkit-datetime-edit-text { color: red; padding: 0 0.3em; }
+.invoice-date-group input[type="date"]::-webkit-datetime-edit-month-field { color: blue; }
+.invoice-date-group input[type="date"]::-webkit-datetime-edit-day-field { color: green; }
+.invoice-date-group input[type="date"]::-webkit-datetime-edit-year-field { color: purple; }
+.invoice-date-group input[type="date"]::-webkit-inner-spin-button { display: none; }
+.invoice-date-group input[type="date"]::-webkit-calendar-picker-indicator { background: orange; }
+
+.item-list-container {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+.item-list-container > .input-group{
+    width: 45%;
+}
+.item-list-container .item-qty-group{
+    display: flex;
+    gap: 2rem;
+    width: 50%;
+}
+.item-list-container .item-qty-group .input-group:nth-child(1){
+    width: 15%;
+}
+.item-list-container .item-qty-group .input-group:nth-child(2){
+    width: 30%;
+}
+.item-list-container .item-qty-group .total-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 9px;
+    color: var(--item-list-text-gray-color);
+}
+.total-group .total{
+    font-weight: 400;
+    font-size: .8em;
+}
+.item-list-container .delete{
+    align-self: end;
+    padding-bottom: 8px;
+}
+.item-list-container .delete button{
+    background:none;
+}
+.item-list-container .delete button:hover{
+    cursor: pointer;
+}
+.item-list-container .delete button:hover svg>path{
+    fill:red;
+}

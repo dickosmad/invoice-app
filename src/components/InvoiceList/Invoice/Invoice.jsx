@@ -14,8 +14,8 @@ export default function Invoice() {
         <li className="invoice-price">£102.04 </li>
         <li className="invoice-status">
           {" "}
-          <span className="status">
-            <icon className="dot"></icon>
+          <span className="status pending-status">
+            <icon className="dot pending-status-dot"></icon>
             Pending
           </span>
           <span className="right-arrow">

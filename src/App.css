@@ -6,6 +6,12 @@
   --text-gray-color : #888EB0;
   --text-white-color:#FFFFFF;
   --invoice-gray-text-color: #858BB2;
+  --input-border-gray-color: #DFE3FA;
+  --input-label-gray-color: #7E88C3;
+  --item-list-text-gray-color: #777F98;
+  --new-item-btn-color: #F9FAFE;
+  --save-draft-btn-color: #373B53;
+  --save-draft-btn-text-color: #888EB0;
   --invoice-btn-color: #7C5DFA;
   --paid-status-color:#33D69F ;
   --pending-status-color:  #FF8F00;
@@ -28,6 +34,8 @@
   width: clamp(768px, 1440px, 1500px) ;
   display: flex;
   gap:1rem;
+  position: relative;
+  height: 100vh;
  
 }
 .main-content-wrapper{

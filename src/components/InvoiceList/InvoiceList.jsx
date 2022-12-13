@@ -6,6 +6,9 @@ function InvoiceList() {
   return (
     <div className="invoice-list-container">
       <Invoice />
+      <Invoice />
+      <Invoice />
+      <Invoice />
     </div>
   );
 }
