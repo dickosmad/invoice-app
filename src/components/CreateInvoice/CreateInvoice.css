@@ -126,3 +126,45 @@ form .client-zip-country-city-group{
 .item-list-container .delete button:hover svg>path{
     fill:red;
 }
+.add-item-btn{
+    height: 48px;
+    border-radius: 25px;
+    background: var(--new-item-btn-color);
+    color: var(--item-list-text-gray-color);
+    
+}
+.add-item-btn:hover{
+    background: var(--new-item-btn-hover-color);
+}
+.add-item-btn icon{
+    margin-right:3px;
+}
+.create-invoice-wrapper .actions-group{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.actions-group .discard-btn {
+    padding: 5px 20px;
+    border-radius: 25px;
+    background: var(--new-item-btn-color);
+    color: var(--item-list-text-gray-color);
+}
+
+.actions-group .btn-group{
+    display: flex;
+    gap: 1rem;
+    height: 48px;
+}
+.actions-group .save-as-draft-btn{
+    padding: 5px 20px;
+    border-radius: 30px;
+    background: var(--save-draft-btn-color);
+    color: var(--save-draft-btn-text-color);
+}
+.actions-group .save-and-send-btn{
+    padding: 5px 20px;
+    border-radius: 30px;
+    background: var(--invoice-btn-color);
+    color: var(--text-white-color);
+}
