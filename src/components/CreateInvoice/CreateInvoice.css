@@ -48,6 +48,7 @@
 form .bill-zip-country-city-group{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 form .client-zip-country-city-group{
     display: flex;
@@ -86,6 +87,7 @@ form .client-zip-country-city-group{
     display: flex;
     gap: 10px;
     justify-content: space-between;
+
 }
 .item-list-container > .input-group{
     width: 45%;
@@ -167,4 +169,12 @@ form .client-zip-country-city-group{
     border-radius: 30px;
     background: var(--invoice-btn-color);
     color: var(--text-white-color);
+}
+@media (max-width: 400px){
+    .create-invoice-wrapper{
+        width: 357px;
+    }
+    .create-invoice-wrapper .input-group{
+        width: 100%;
+    }
 }
