@@ -3,12 +3,23 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./index.css";
 
-import { BrowserRouter } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+import ViewInvoice from "./components/ViewInvoice";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+  },
+  {
+    path: "invoice/:invoiceId",
+    element: <ViewInvoice />,
+  },
+]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <BrowserRouter>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  </BrowserRouter>
+  <React.StrictMode>
+    <RouterProvider router={router} />
+  </React.StrictMode>
 );

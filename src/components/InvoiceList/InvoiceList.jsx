@@ -5,10 +5,10 @@ import "./InvoiceList.css";
 function InvoiceList() {
   return (
     <div className="invoice-list-container">
-      <Invoice />
-      <Invoice />
-      <Invoice />
-      <Invoice />
+      <Invoice id="1" />
+      <Invoice id="2" />
+      <Invoice id="3" />
+      <Invoice id="4" />
     </div>
   );
 }

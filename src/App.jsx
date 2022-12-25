@@ -14,10 +14,10 @@ function App() {
       <div className="main-content-wrapper">
         <Header />
         <InvoiceList />
-        <Routes>
+        {/* <Routes>
           <Route path="/invoice-view" element={<ViewInvoice />} />
-        </Routes>
-        {/* <CreateInvoice /> */}
+        </Routes> */}
+        <CreateInvoice />
       </div>
     </div>
   );

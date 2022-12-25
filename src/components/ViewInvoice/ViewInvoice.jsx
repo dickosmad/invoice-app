@@ -1,22 +1,29 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
+import "./ViewInvoice.css";
 export default function ViewInvoice() {
+  const navigate = useNavigate();
   return (
     <div className="view-invoice-container">
       <div className="go-back-container">
-        <span className="left-arrow">
-          <svg width="7" height="10" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M6.342.886L2.114 5.114l4.228 4.228"
-              stroke="#9277FF"
-              stroke-width="2"
-              fill="none"
-              fill-rule="evenodd"
-            />
-          </svg>
-        </span>
-        <button type="button" aria-label="Go back to invoices list">
-          Back
+        <button
+          onClick={() => navigate(-1)}
+          type="button"
+          aria-label="Go back to invoices list"
+        >
+          <span className="left-arrow">
+            <svg width="7" height="10" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M6.342.886L2.114 5.114l4.228 4.228"
+                stroke="#9277FF"
+                stroke-width="2"
+                fill="none"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </span>
+          Go back
         </button>
       </div>
       <div class="view-invoice-btns-container">

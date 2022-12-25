@@ -32,43 +32,43 @@
         font-weight:900;
         font-size: 1.2em;
     }
-    ul li.invoice-status .status{
+    .invoice-status .status{
         font-weight:600;
         padding: 7px 15px;
         border-radius: 4px;
     }
-    ul li .pending-status {
+     .pending-status {
         color: var(--pending-status-color);
         background: #D7A15D40;
         padding: 5px;
     }
-    ul li .paid-status {
+     .paid-status {
         color: var(--paid-status-color);
         background: #5DD78140;
         padding: 5px;
     }
-    ul li .draft-status {
+     .draft-status {
         color: var(--draft-status-color);
         background: #373B5336;
         padding: 5px;
     }
-    ul li.invoice-status .paid-status-dot{
+     .paid-status-dot{
         background-color: var(--paid-status-color);
     }
-    ul li.invoice-status .pending-status-dot{
+     .pending-status-dot{
         background-color: var(--pending-status-color);
     }
-    ul li.invoice-status .draft-status-dot{
+     .draft-status-dot{
         background-color: var(--draft-status-color);
     }
-    ul li.invoice-status .dot{
+    .invoice-status .dot{
         width: 10px;
         height: 10px;
         display: inline-block;
         border-radius: 50%;
         margin-right: 10px;
     }
-    ul li.invoice-status .right-arrow{
+    .invoice-status .right-arrow{
         margin-left: 15px;
     }
 
